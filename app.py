@@ -12,4 +12,4 @@ def predict():
         return jsonfify({"prediction": 0, "features": {"num1": num1, "num2": num2}})
         
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
