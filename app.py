@@ -9,7 +9,7 @@ def predict():
     if (num1 + num2) > 5.8:
         return jsonify({"prediction": 1, "features": {"num1": num1, "num2": num2}})
     else:
-        return jsonfify({"prediction": 0, "features": {"num1": num1, "num2": num2}})
+        return jsonify({"prediction": 0, "features": {"num1": num1, "num2": num2}})
         
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
